@@ -1,0 +1,158 @@
+body{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    height: 100vh;
+    background-image: 
+      url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative; 
+}
+section{
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+.wrapper{
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+.overlay:before{
+    animation: grain 1s steps(10) infinite;
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.48;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+} 
+ @keyframes grain{
+    0%, 100% {transform: translate(0,0);}
+    10% {transform: translate(-5%,-10%);}
+    20% {transform: translate(-15%,5%);}
+    30% {transform: translate(7%,-25%);}
+    40% {transform: translate(-5%,25%);}
+    50% {transform: translate(-15%,10%);}
+    60% {transform: translate(15%,0%);}
+    70% {transform: translate(0%,15%);}
+    80% {transform: translate(3%,35%);}
+    90% {transform: translate(-10%,10%);}
+}
+.menu-btn{
+    position: fixed;
+    margin: 1.2em;
+    right: 0;
+    z-index: 1;
+  }
+  button{
+    border: none;
+    background: none;
+  }
+  button:focus{
+    outline: none !important;
+  }
+
+i{
+    outline: none;
+    padding:0.8em;
+   
+    
+    border-radius: 50%;
+  }
+  .col-lg{
+    height: 100vh;
+  }
+  .col-lg.overlay{
+    background: #000;
+    opacity: 0.8;
+    position: absolute;
+    top: -100%;
+  
+  }
+ .nav ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+ .nav li{
+    display: inline-block;
+  }
+  
+ .nav li:not(:last-child){
+    margin-right:120px ;
+  }
+  .nav li:first-child:hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  .nav li:nth-child(2):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+ .nav li:nth-child(3):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  .nav li:nth-child(4):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg);
+    transition: 2s;
+    animation: fade-in 2s ease-in-out 
+    ;
+  }
+footer{
+    position: relative;
+    top: 100%;
+}

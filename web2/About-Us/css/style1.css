@@ -1,0 +1,326 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+    margin: 0;
+  padding: 0;
+}
+body, html {
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: white;
+      overflow-x: hidden;
+      
+  }
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    
+  }
+    .overlay:before{
+      animation: grain 1s steps(10) infinite;
+      content: "";
+      height: 300%;
+      left: -50%;
+      opacity: 0.48;
+      position: fixed;
+      top: -110%;
+      width: 300%;
+    } 
+    @keyframes grain{
+      0%, 100% {transform: translate(0,0);}
+      10% {transform: translate(-5%,-10%);}
+      20% {transform: translate(-15%,5%);}
+      30% {transform: translate(7%,-25%);}
+      40% {transform: translate(-5%,25%);}
+      50% {transform: translate(-15%,10%);}
+      60% {transform: translate(15%,0%);}
+      70% {transform: translate(0%,15%);}
+      80% {transform: translate(3%,35%);}
+      90% {transform: translate(-10%,10%);}
+    }
+  
+    .menu-btn{
+      position: absolute;
+      margin: 1.2em;
+      right: 0;
+      z-index: 1;
+    }
+    button{
+      border: none;
+      background: none;
+    }
+    button:focus{
+      outline: none !important;
+    }
+  
+  i{
+      outline: none;
+      padding:0.8em;
+    
+     
+    
+      border-radius: 50%;
+    }
+  .row, .col-lg{
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+  .col-lg{
+    height: 100vh;
+  }
+  .col-lg.overlay{
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: -93%;
+    height: 93vh;
+  }
+  .nav ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li{
+    display: inline-block;
+  }
+  
+ .nav li:not(:last-child){
+    margin-right:120px ;
+  }
+  .nav li:first-child:hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  .nav li:nth-child(2):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  .nav li:nth-child(3):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg) ;
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  .nav li:nth-child(4):hover::before{
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position:absolute;
+    top: -180px;
+    left: -30px;
+    background:url(../img/antoine-barres-jay5BqVyf5A-unsplash.jpg);
+    transition: 2s;
+    animation: fade-in 2s ease-in-out ;
+  
+  }
+  @keyframes fade-in{
+    0%{
+      opacity: 0;
+      top:-160px;
+    }
+    50%{
+      opacity: 1;
+      top:-180px;
+    }
+    100%{
+      opacity: 1;
+      top:-180px;
+    }
+  }
+  .bg {
+    /* The image used */
+    background-image: url("../img/farzad-mohsenvand-pKhfJme9mP0-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  h2{
+      text-align: center;
+      margin-bottom: 100px;
+      color: white;
+  }
+  .flip-card-container {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+  }
+  .row {
+    
+
+  
+     
+  }
+  .col{
+    
+      margin-bottom: 100px;
+  }
+  .flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+    
+  }
+  .flip-card-container:hover .flip-card {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+    
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0.5rem; */
+  }
+  .flip-card-front {
+    background-color: #333;
+    color: #fff;
+   
+  }
+  .flip-card-back {
+    background-color: #517fa4;
+    color: #fff;
+    transform: rotateY(180deg);
+    
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+  }
+  .flip-card-back p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .flip-card-back p span {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1.25rem;
+  }
+  @media(max-width:900px) {
+    .bg{
+      background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+      height: 1500px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .col-lg.overlay{
+      top: -110%;
+      height:100vh;
+    }
+    li{
+      text-align: center;
+      display:block !important ;
+      margin: 0 !important;
+      padding: 20px 0;
+    }
+    li:hover::before{
+      width: 0 !important;
+    }
+    
+  }
+  @media(max-width:768px) {
+  .bg{
+      background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+      height: 1500px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    
+  .flip-card-container {
+    margin-bottom: 40px; 
+    margin-left: 30px;   
+    }
+    
+  }
+  @media(max-width:500px) {
+    .bg{
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+    height: 3500px;
+    width: 100%;
+    overflow-x: hidden;
+    }
+    .flip-card-container {
+    margin-bottom: 40px;
+    margin-left: -3px;
+     
+        
+    }
+    .col{
+      display: grid;
+      place-items: center;
+    }
+    
+  }
+  footer{
+   
+  }
