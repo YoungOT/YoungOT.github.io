@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+    background:linear-gradient(#d1af27, transparent), url(revival-eminem.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'oswald'
+    
+
+}	
+.container{
+	max-width:800px;
+	margin: 50px auto;
+	background: #ddd785;
+	box-sizing: border-box;
+	padding: 35px;
+
+}
+p{
+	text-align: center;
+	letter-spacing: 1.2px;
+	margin-bottom: 20px;
+	font-size: 35px;
+	background-color: #d1af27;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+
+}
+.input,
+.five .area{
+	width: 80%;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	border: 2.5px solid #d8d51a;
+	font-size: 13px; 
+	border-radius: 6px;
+	outline: none;
+	/*transition: all 1px;*/
+}
+.one .input{
+	width: 48%;
+	float: left;
+    margin-right:7px;
+	
+}
+.five .area{
+	height: 100px;
+}
+.input:focus,
+.area:focus{
+	border: 2.5px solid #0de5c1;
+}
+.six{
+	text-align: center;
+	width: 100%
+	
+}
+.six .enter{
+    background:linear-gradient(#d1af27, transparent), url(revival-eminem.jpg);
+	padding: 12px 80px;
+	font-size: 15px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+::-webkit-input-placeholder {
+	font-family: 'oswald';
+	color:  #0de5c1;
+}
